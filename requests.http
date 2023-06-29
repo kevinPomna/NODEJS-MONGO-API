@@ -1,0 +1,27 @@
+
+POST  http://localhost:8000/api/users HTTP/1.1
+Content-Type:  application/json
+
+{
+    "nombre": "Papa",
+    "precio":"1.50",
+    "cantidad": "1",
+    "provedor": "pepsi"
+}
+### 
+GET http://localhost:8000/api/users HTTP/1.1
+###
+
+GET http://localhost:8000/api/users/649ccf13bf00d53a8515411f HTTP/1.1
+
+###
+PUT  http://localhost:8000/api/users/649ca0b76c4be1ff68d840d1 HTTP/1.1
+{
+     "nombre": "pepsi",
+    "precio":"1.50",
+    "cantidad": "1",
+    "provedor": "pepsi"
+}
+
+###
+DELETE  HTTP/1.1 http://localhost:8000/api/users/649c9d14c5c733ddddb0c91b HTTP/1.1
